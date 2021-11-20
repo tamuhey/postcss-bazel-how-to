@@ -12,6 +12,7 @@ npm_package_bin(
     data = [
         "base.css",
         "postcss.config.js",
+        "@npm//autoprefixer",
     ],
     package = "postcss-cli",
     package_bin = "postcss",

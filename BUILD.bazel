@@ -1,0 +1,19 @@
+# Add rules here to build your software
+load("@build_bazel_rules_nodejs//:index.bzl", "npm_package_bin")
+
+npm_package_bin(
+    name = "foo",
+    outs = ["foo.css"],
+    args = [
+        "base.css",
+        "-o",
+        "$@",
+    ],
+    data = [
+        "base.css",
+        "postcss.config.js",
+    ],
+    link_workspace_root = True,
+    package = "postcss-cli",
+    package_bin = "postcss",
+)

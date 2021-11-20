@@ -1,0 +1,19 @@
+{
+    "name": "my_workspace",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazelisk": "latest",
+        "@bazel/ibazel": "latest",
+        "@bazel/buildifier": "latest"
+    },
+    "scripts": {
+        "build": "bazel build //...",
+        "test": "bazel test //..."
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.0",
+        "postcss": "^8.3.11",
+        "postcss-cli": "^9.0.2"
+    }
+}
